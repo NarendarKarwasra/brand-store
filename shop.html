@@ -1,0 +1,1050 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Abc...</title>
+</head>
+<style>
+
+*{
+box-sizing:border-box;
+
+}
+body{
+background-color:#96a98b;
+}
+
+.navbar{
+	display:flex;
+	width:100%;
+	justify-content:center;
+	list-style-type:none;
+	padding:0;
+	
+}
+.navbar a{
+	text-decoration:none;
+	text-align:center;
+	font-size:4vh;
+	color:black;
+	display:block;
+	text-align:center;
+	padding:0.5vw 2vw;
+}
+.dropdown{
+display:inline-block;
+}
+.dropdown-content{
+	display:none;
+	position:absolute;
+	z-index:1;
+}
+.dropdown-content a{
+	text-align:center;
+	display:block;
+}
+.dropdown:hover .dropdown-content{
+	display:block;
+}
+
+.navbar a:hover{
+	background:#bd8839;
+	transition:ease .2s;
+	border-radius:35px;
+	color:white;
+}
+
+
+.container h1{
+text-align:center;
+font-size:3.5vw;
+margin-top:5%;
+}
+.brand{
+	width:90%;
+	margin:auto;
+	content:"";
+	clear:both;
+	display:table;
+}
+.logo{
+    width:20%;
+	margin-left:50%;
+	transform:translate(-50%);
+	margin-bottom:2%;
+	margin-top:5%;
+}
+
+.p1{
+	width:19%;
+	float:left;
+	margin:4% 0.5% 0 0.5%;
+}
+.p1:hover{
+	opacity:0.8;
+}
+.p1 h3{
+	font-size:2vw;
+	margin:2%;
+	font-weight:400;
+}
+.p1 h2{
+	font-size:1.5vw;
+	margin:2%;
+	font-weight:400;
+}
+.p1 .btn{
+	margin-top:3%;
+	font-size:1.5vw;
+	border:none;
+	border-radius:10px;
+	padding:2% 10%;
+	cursor:pointer;
+	margin-left:15%;
+}
+.p1 .btn:hover{
+	background:#bd8839;
+	transition:ease .2s;
+}
+
+
+.footer-top{
+	width:100%;
+	text-align:center;
+	background-color:#b28f59;
+	padding:3% 5%;
+	margin-top:5%;
+}
+.footer-img{
+	width:30%;
+	margin:auto;
+}
+.footer-img img{
+	width:100%;
+}
+.footer-top p{
+	font-size:3.5vh;
+}
+.footer-social{
+	margin:2% 0 0 0;
+}
+.footer-social .social{
+	width:7%;
+	margin-right:1%;
+	cursor:pointer;
+}
+
+.footer-social .social:hover{
+	border-radius:50%;
+	box-shadow:5px 5px 10px gray;
+}
+
+.footer-bottom{
+	text-align:center;
+	background-color:#6d5836;
+	font-size:3vh;
+	padding:.1%;
+}
+
+
+
+
+@media screen and (max-width:900px){
+.navbar{
+    display:block;
+}
+.navbar a{
+	font-size:4.3vh;
+	padding:0.5vh 0vw;
+}
+.dropdown{
+    display:block;
+}
+.dropdown-content{
+position:static;
+width:100%;
+}
+
+
+.container h1{
+    font-size:6vh;
+}
+.logo{
+    width:25%;
+    margin-top:10%;
+	margin-bottom:2%;
+}
+
+.brand{
+	width:95%;
+}
+
+.p1{
+	width:24%;
+}
+.p1 h3{
+	font-size:3vw;
+}
+.p1 h2{
+	font-size:1.9vw;
+}
+.p1 .btn{
+	margin-top:3%;
+	font-size:2.5vw;
+	margin-left:15%;
+}
+
+
+.footer-img{
+	width:40%;
+}
+.footer-top p{
+	font-size:3vh;
+}
+.footer-social .social{
+	width:8%;
+}
+.footer-bottom{
+	font-size:2.5vh;
+}	
+}
+
+
+
+@media screen and (max-width:500px){
+.navbar a{
+	font-size:6vw;
+	padding:0.5vw 2vw;
+}
+
+.container h1{
+	margin-top:15%;
+}
+
+.logo{
+    width:40%;
+	margin-top:20%;
+}
+
+.p1{
+	width:46%;
+	margin:10% 2% 0 2%;
+}
+.p1 h3{
+	font-size:5vw;
+}
+.p1 h2{
+	font-size:3.7vw;
+}
+.p1 .btn{
+	margin-top:3%;
+	font-size:4.5vw;
+	margin-left:10%;
+}
+
+
+.footer-img{
+	width:50%;
+}
+.footer-top p{
+	font-size:4vw;
+}
+.footer-social .social{
+	width:12%;
+}
+.footer-bottom{
+	font-size:3.2vw;
+}	
+}
+
+
+</style>
+</head>
+
+
+<ul class="navbar">
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="news.html">News</a></li>
+<li><a href="contact.html">Contact</a></li>
+<li class="dropdown"><a href="shop.html">Brands</a>
+    <div class="dropdown-content">
+	    <a href="reebok.html">Reebok</a> 
+	    <a href="nike.html">Nike</a> 
+	    <a href="hm.html">H&M</a> 
+	    <a href="levis.html">Levi's</a> 
+	</div>
+</li>
+</ul>
+
+
+<div class="container">
+<h1>Our All Products</h1>
+
+<div class="brand">
+<img class="logo" src="logo/reebok.png" alt="logo">
+<div class="brand-p">
+<div class="p1">
+<a href="reebok/1.jpg"><img src="reebok/1.jpg" alt="shoes" style="width:100%;"></a>
+<h3>Mens Reebok Stride</h3>
+<h2><s>&#8377;4550</s>&nbsp;&nbsp; &#8377;3185 &nbsp;&nbsp;<font color="red">30% OFF</font></h2>
+<button class="btn">Add to Cart</button>
+</div>
+
+<div class="p1">
+<a href="reebok/2.jpg"><img src="reebok/2.jpg" alt="shoes" style="width:100%;"></a>
+<h3>Reebok Stride Walker</h3>
+<h2><s>&#8377;6500</s>&nbsp;&nbsp; &#8377;4550 &nbsp;&nbsp;<font color="red">30% OFF</font></h2>
+<button class="btn">Add to Cart</button>
+</div>
+
+<div class="p1">
+<a href="reebok/3.jpg"><img src="reebok/3.jpg" alt="shoes" style="width:100%;"></a>
+<h3>Reebok Drift Runner</h3>
+<h2><s>&#8377;3600</s>&nbsp;&nbsp; &#8377;2340 &nbsp;&nbsp;<font color="red">35% OFF</font></h2>
+<button class="btn">Add to Cart</button>
+</div>
+
+<div class="p1">
+<a href="reebok/4.jpg"><img src="reebok/4.jpg" alt="shoes" style="width:100%;"></a>
+<h3>Women Floatride Enegy</h3>
+<h2><s>&#8377;3950</s>&nbsp;&nbsp; &#8377;2690 &nbsp;&nbsp;<font color="red">32% OFF</font></h2>
+<button class="btn">Add to Cart</button>
+</div>
+
+<div class="p1">
+<a href="reebok/5.jpg"><img src="reebok/5.jpg" alt="shoes" style="width:100%;"></a>
+<h3>Reebok Ree Fusion Running</h3>
+<h2><s>&#8377;4760</s>&nbsp;&nbsp; &#8377;3094 &nbsp;&nbsp;<font color="red">35% OFF</font></h2>
+<button class="btn">Add to Cart</button>
+</div>
+
+<div class="p1">
+<a href="reebok/6.jpg"><img src="reebok/6.jpg" alt="shoes" style="width:100%;"></a>
+<h3>Reebok Ree Fusion Running</h3>
+<h2><s>&#8377;4760</s>&nbsp;&nbsp; &#8377;3094 &nbsp;&nbsp;<font color="red">35% OFF</font></h2>
+<button class="btn">Add to Cart</button>
+</div>
+
+</div>
+
+</div>
+
+
+<div class="brand" style="margin-top:-5%;">
+<img class="logo" src="logo/nike.png" alt="logo">
+<div class="brand-p">
+<div class="p1">
+<a href="nike/1.jpg"><img src="nike/1.jpg" alt="shoes" style="width:100%;"></a>
+<h3>Nike Air Force 11'07</h3>
+<h2><s>&#8377;4550</s>&nbsp;&nbsp; &#8377;3185 &nbsp;&nbsp;<font color="red">30% OFF</font></h2>
+<button class="btn">Add to Cart</button>
+</div>
+
+<div class="p1">
+<a href="nike/2.jpg"><img src="nike/2.jpg" alt="shoes" style="width:100%;"></a>
+<h3>Nike Jumpman MVP</h3>
+<h2><s>&#8377;6500</s>&nbsp;&nbsp; &#8377;4550 &nbsp;&nbsp;<font color="red">30% OFF</font></h2>
+<button class="btn">Add to Cart</button>
+</div>
+
+<div class="p1">
+<a href="nike/3.jpg"><img src="nike/3.jpg" alt="shoes" style="width:100%;"></a>
+<h3>Nike Air Max 90 Futura</h3>
+<h2><s>&#8377;3600</s>&nbsp;&nbsp; &#8377;2340 &nbsp;&nbsp;<font color="red">35% OFF</font></h2>
+<button class="btn">Add to Cart</button>
+</div>
+
+<div class="p1">
+<a href="nike/4.jpg"><img src="nike/4.jpg" alt="shoes" style="width:100%;"></a>
+<h3>Air Jordan Next Chapter</h3>
+<h2><s>&#8377;3950</s>&nbsp;&nbsp; &#8377;2690 &nbsp;&nbsp;<font color="red">32% OFF</font></h2>
+<button class="btn">Add to Cart</button>
+</div>
+
+<div class="p1">
+<a href="nike/5.jpg"><img src="nike/5.jpg" alt="shoes" style="width:100%;"></a>
+<h3>Nike Air Max Men 12</h3>
+<h2><s>&#8377;4760</s>&nbsp;&nbsp; &#8377;3094 &nbsp;&nbsp;<font color="red">35% OFF</font></h2>
+<button class="btn">Add to Cart</button>
+</div>
+
+<div class="p1">
+<a href="nike/6.jpg"><img src="nike/6.jpg" alt="shoes" style="width:100%;"></a>
+<h3>Nike Air Force 11'07</h3>
+<h2><s>&#8377;4550</s>&nbsp;&nbsp; &#8377;3185 &nbsp;&nbsp;<font color="red">30% OFF</font></h2>
+<button class="btn">Add to Cart</button>
+</div>
+
+<div class="p1">
+<a href="nike/7.jpg"><img src="nike/7.jpg" alt="shoes" style="width:100%;"></a>
+<h3>Nike Jumpman MVP</h3>
+<h2><s>&#8377;6500</s>&nbsp;&nbsp; &#8377;4550 &nbsp;&nbsp;<font color="red">30% OFF</font></h2>
+<button class="btn">Add to Cart</button>
+</div>
+
+<div class="p1">
+<a href="nike/8.jpg"><img src="nike/8.jpg" alt="shoes" style="width:100%;"></a>
+<h3>Nike Air Max 90 Futura</h3>
+<h2><s>&#8377;3600</s>&nbsp;&nbsp; &#8377;2340 &nbsp;&nbsp;<font color="red">35% OFF</font></h2>
+<button class="btn">Add to Cart</button>
+</div>
+
+<div class="p1">
+<a href="nike/9.jpg"><img src="nike/9.jpg" alt="shoes" style="width:100%;"></a>
+<h3>Air Jordan Next Chapter</h3>
+<h2><s>&#8377;3950</s>&nbsp;&nbsp; &#8377;2690 &nbsp;&nbsp;<font color="red">32% OFF</font></h2>
+<button class="btn">Add to Cart</button>
+</div>
+
+<div class="p1">
+<a href="nike/10.jpg"><img src="nike/10.jpg" alt="shoes" style="width:100%;"></a>
+<h3>Nike Air Max Men 12</h3>
+<h2><s>&#8377;4760</s>&nbsp;&nbsp; &#8377;3094 &nbsp;&nbsp;<font color="red">35% OFF</font></h2>
+<button class="btn">Add to Cart</button>
+</div>
+
+
+<div class="p1">
+<a href="nike/11.jpg"><img src="nike/11.jpg" alt="shoes" style="width:100%;"></a>
+<h3>Nike Air Max 90 Futura</h3>
+<h2><s>&#8377;3600</s>&nbsp;&nbsp; &#8377;2340 &nbsp;&nbsp;<font color="red">35% OFF</font></h2>
+<button class="btn">Add to Cart</button>
+</div>
+
+<div class="p1">
+<a href="nike/12.jpg"><img src="nike/12.jpg" alt="shoes" style="width:100%;"></a>
+<h3>Air Jordan Next Chapter</h3>
+<h2><s>&#8377;3950</s>&nbsp;&nbsp; &#8377;2690 &nbsp;&nbsp;<font color="red">32% OFF</font></h2>
+<button class="btn">Add to Cart</button>
+</div>
+
+<div class="p1">
+<a href="nike/13.jpg"><img src="nike/13.jpg" alt="shoes" style="width:100%;"></a>
+<h3>Nike Air Max Men 12</h3>
+<h2><s>&#8377;4760</s>&nbsp;&nbsp; &#8377;3094 &nbsp;&nbsp;<font color="red">35% OFF</font></h2>
+<button class="btn">Add to Cart</button>
+</div>
+
+</div>
+
+</div>
+
+
+<div class="brand">
+<img class="logo" src="logo/hm.png" alt="logo">
+<div class="brand-p">
+<div class="p1">
+<a href="hm/1.jpg"><img src="hm/1.jpg" alt="shoes" style="width:100%;"></a>
+<h3>H&M Man Long Coat</h3>
+<h2><s>&#8377;4550</s>&nbsp;&nbsp; &#8377;3185 &nbsp;&nbsp;<font color="red">30% OFF</font></h2>
+<button class="btn">Add to Cart</button>
+</div>
+
+<div class="p1">
+<a href="hm/2.jpg"><img src="hm/2.jpg" alt="shoes" style="width:100%;"></a>
+<h3>H&M Women Jacket</h3>
+<h2><s>&#8377;6500</s>&nbsp;&nbsp; &#8377;4550 &nbsp;&nbsp;<font color="red">30% OFF</font></h2>
+<button class="btn">Add to Cart</button>
+</div>
+
+<div class="p1">
+<a href="hm/3.jpg"><img src="hm/3.jpg" alt="shoes" style="width:100%;"></a>
+<h3>H&M Montif-Front Hoodie</h3>
+<h2><s>&#8377;3600</s>&nbsp;&nbsp; &#8377;2340 &nbsp;&nbsp;<font color="red">35% OFF</font></h2>
+<button class="btn">Add to Cart</button>
+</div>
+
+<div class="p1">
+<a href="hm/4.jpg"><img src="hm/4.jpg" alt="shoes" style="width:100%;"></a>
+<h3>H&M Relaxed Fit Hoodie</h3>
+<h2><s>&#8377;3950</s>&nbsp;&nbsp; &#8377;2690 &nbsp;&nbsp;<font color="red">32% OFF</font></h2>
+<button class="btn">Add to Cart</button>
+</div>
+
+<div class="p1">
+<a href="hm/5.jpg"><img src="hm/5.jpg" alt="shoes" style="width:100%;"></a>
+<h3>H&M Man Denim Jacket</h3>
+<h2><s>&#8377;4760</s>&nbsp;&nbsp; &#8377;3094 &nbsp;&nbsp;<font color="red">35% OFF</font></h2>
+<button class="btn">Add to Cart</button>
+</div>
+
+<div class="p1">
+<a href="hm/6.jpg"><img src="hm/6.jpg" alt="shoes" style="width:100%;"></a>
+<h3>H&M Man Long Coat</h3>
+<h2><s>&#8377;4550</s>&nbsp;&nbsp; &#8377;3185 &nbsp;&nbsp;<font color="red">30% OFF</font></h2>
+<button class="btn">Add to Cart</button>
+</div>
+
+<div class="p1">
+<a href="hm/7.jpg"><img src="hm/7.jpg" alt="shoes" style="width:100%;"></a>
+<h3>H&M Women Jacket</h3>
+<h2><s>&#8377;6500</s>&nbsp;&nbsp; &#8377;4550 &nbsp;&nbsp;<font color="red">30% OFF</font></h2>
+<button class="btn">Add to Cart</button>
+</div>
+
+<div class="p1">
+<a href="hm/8.jpg"><img src="hm/8.jpg" alt="shoes" style="width:100%;"></a>
+<h3>H&M Montif-Front Hoodie</h3>
+<h2><s>&#8377;3600</s>&nbsp;&nbsp; &#8377;2340 &nbsp;&nbsp;<font color="red">35% OFF</font></h2>
+<button class="btn">Add to Cart</button>
+</div>
+
+<div class="p1">
+<a href="hm/9.jpg"><img src="hm/9.jpg" alt="shoes" style="width:100%;"></a>
+<h3>H&M Relaxed Fit Hoodie</h3>
+<h2><s>&#8377;3950</s>&nbsp;&nbsp; &#8377;2690 &nbsp;&nbsp;<font color="red">32% OFF</font></h2>
+<button class="btn">Add to Cart</button>
+</div>
+
+<div class="p1">
+<a href="hm/10.jpg"><img src="hm/10.jpg" alt="shoes" style="width:100%;"></a>
+<h3>H&M Man Denim Jacket</h3>
+<h2><s>&#8377;4760</s>&nbsp;&nbsp; &#8377;3094 &nbsp;&nbsp;<font color="red">35% OFF</font></h2>
+<button class="btn">Add to Cart</button>
+</div>
+
+<div class="p1">
+<a href="hm/11.jpg"><img src="hm/11.jpg" alt="shoes" style="width:100%;"></a>
+<h3>H&M Man Long Coat</h3>
+<h2><s>&#8377;4550</s>&nbsp;&nbsp; &#8377;3185 &nbsp;&nbsp;<font color="red">30% OFF</font></h2>
+<button class="btn">Add to Cart</button>
+</div>
+
+<div class="p1">
+<a href="hm/12.jpg"><img src="hm/12.jpg" alt="shoes" style="width:100%;"></a>
+<h3>H&M Women Jacket</h3>
+<h2><s>&#8377;6500</s>&nbsp;&nbsp; &#8377;4550 &nbsp;&nbsp;<font color="red">30% OFF</font></h2>
+<button class="btn">Add to Cart</button>
+</div>
+
+<div class="p1">
+<a href="hm/13.jpg"><img src="hm/13.jpg" alt="shoes" style="width:100%;"></a>
+<h3>H&M Montif-Front Hoodie</h3>
+<h2><s>&#8377;3600</s>&nbsp;&nbsp; &#8377;2340 &nbsp;&nbsp;<font color="red">35% OFF</font></h2>
+<button class="btn">Add to Cart</button>
+</div>
+
+<div class="p1">
+<a href="hm/14.jpg"><img src="hm/14.jpg" alt="shoes" style="width:100%;"></a>
+<h3>H&M Relaxed Fit Hoodie</h3>
+<h2><s>&#8377;3950</s>&nbsp;&nbsp; &#8377;2690 &nbsp;&nbsp;<font color="red">32% OFF</font></h2>
+<button class="btn">Add to Cart</button>
+</div>
+
+<div class="p1">
+<a href="hm/15.jpg"><img src="hm/15.jpg" alt="shoes" style="width:100%;"></a>
+<h3>H&M Man Denim Jacket</h3>
+<h2><s>&#8377;4760</s>&nbsp;&nbsp; &#8377;3094 &nbsp;&nbsp;<font color="red">35% OFF</font></h2>
+<button class="btn">Add to Cart</button>
+</div>
+
+<div class="p1">
+<a href="hm/16.jpg"><img src="hm/16.jpg" alt="shoes" style="width:100%;"></a>
+<h3>H&M Man Long Coat</h3>
+<h2><s>&#8377;4550</s>&nbsp;&nbsp; &#8377;3185 &nbsp;&nbsp;<font color="red">30% OFF</font></h2>
+<button class="btn">Add to Cart</button>
+</div>
+
+<div class="p1">
+<a href="hm/17.jpg"><img src="hm/17.jpg" alt="shoes" style="width:100%;"></a>
+<h3>H&M Women Jacket</h3>
+<h2><s>&#8377;6500</s>&nbsp;&nbsp; &#8377;4550 &nbsp;&nbsp;<font color="red">30% OFF</font></h2>
+<button class="btn">Add to Cart</button>
+</div>
+
+<div class="p1">
+<a href="hm/18.jpg"><img src="hm/18.jpg" alt="shoes" style="width:100%;"></a>
+<h3>H&M Montif-Front Hoodie</h3>
+<h2><s>&#8377;3600</s>&nbsp;&nbsp; &#8377;2340 &nbsp;&nbsp;<font color="red">35% OFF</font></h2>
+<button class="btn">Add to Cart</button>
+</div>
+
+<div class="p1">
+<a href="hm/19.jpg"><img src="hm/19.jpg" alt="shoes" style="width:100%;"></a>
+<h3>H&M Relaxed Fit Hoodie</h3>
+<h2><s>&#8377;3950</s>&nbsp;&nbsp; &#8377;2690 &nbsp;&nbsp;<font color="red">32% OFF</font></h2>
+<button class="btn">Add to Cart</button>
+</div>
+
+<div class="p1">
+<a href="hm/20.jpg"><img src="hm/20.jpg" alt="shoes" style="width:100%;"></a>
+<h3>H&M Man Denim Jacket</h3>
+<h2><s>&#8377;4760</s>&nbsp;&nbsp; &#8377;3094 &nbsp;&nbsp;<font color="red">35% OFF</font></h2>
+<button class="btn">Add to Cart</button>
+</div>
+
+<div class="p1">
+<a href="hm/21.jpg"><img src="hm/21.jpg" alt="shoes" style="width:100%;"></a>
+<h3>H&M Man Long Coat</h3>
+<h2><s>&#8377;4550</s>&nbsp;&nbsp; &#8377;3185 &nbsp;&nbsp;<font color="red">30% OFF</font></h2>
+<button class="btn">Add to Cart</button>
+</div>
+
+<div class="p1">
+<a href="hm/22.jpg"><img src="hm/22.jpg" alt="shoes" style="width:100%;"></a>
+<h3>H&M Women Jacket</h3>
+<h2><s>&#8377;6500</s>&nbsp;&nbsp; &#8377;4550 &nbsp;&nbsp;<font color="red">30% OFF</font></h2>
+<button class="btn">Add to Cart</button>
+</div>
+
+<div class="p1">
+<a href="hm/23.jpg"><img src="hm/23.jpg" alt="shoes" style="width:100%;"></a>
+<h3>H&M Montif-Front Hoodie</h3>
+<h2><s>&#8377;3600</s>&nbsp;&nbsp; &#8377;2340 &nbsp;&nbsp;<font color="red">35% OFF</font></h2>
+<button class="btn">Add to Cart</button>
+</div>
+
+<div class="p1">
+<a href="hm/24.jpg"><img src="hm/24.jpg" alt="shoes" style="width:100%;"></a>
+<h3>H&M Relaxed Fit Hoodie</h3>
+<h2><s>&#8377;3950</s>&nbsp;&nbsp; &#8377;2690 &nbsp;&nbsp;<font color="red">32% OFF</font></h2>
+<button class="btn">Add to Cart</button>
+</div>
+
+<div class="p1">
+<a href="hm/25.jpg"><img src="hm/25.jpg" alt="shoes" style="width:100%;"></a>
+<h3>H&M Man Denim Jacket</h3>
+<h2><s>&#8377;4760</s>&nbsp;&nbsp; &#8377;3094 &nbsp;&nbsp;<font color="red">35% OFF</font></h2>
+<button class="btn">Add to Cart</button>
+</div>
+
+<div class="p1">
+<a href="hm/26.jpg"><img src="hm/26.jpg" alt="shoes" style="width:100%;"></a>
+<h3>H&M Man Long Coat</h3>
+<h2><s>&#8377;4550</s>&nbsp;&nbsp; &#8377;3185 &nbsp;&nbsp;<font color="red">30% OFF</font></h2>
+<button class="btn">Add to Cart</button>
+</div>
+
+<div class="p1">
+<a href="hm/27.jpg"><img src="hm/27.jpg" alt="shoes" style="width:100%;"></a>
+<h3>H&M Women Jacket</h3>
+<h2><s>&#8377;6500</s>&nbsp;&nbsp; &#8377;4550 &nbsp;&nbsp;<font color="red">30% OFF</font></h2>
+<button class="btn">Add to Cart</button>
+</div>
+
+<div class="p1">
+<a href="hm/28.jpg"><img src="hm/28.jpg" alt="shoes" style="width:100%;"></a>
+<h3>H&M Montif-Front Hoodie</h3>
+<h2><s>&#8377;3600</s>&nbsp;&nbsp; &#8377;2340 &nbsp;&nbsp;<font color="red">35% OFF</font></h2>
+<button class="btn">Add to Cart</button>
+</div>
+
+<div class="p1">
+<a href="hm/29.jpg"><img src="hm/29.jpg" alt="shoes" style="width:100%;"></a>
+<h3>H&M Relaxed Fit Hoodie</h3>
+<h2><s>&#8377;3950</s>&nbsp;&nbsp; &#8377;2690 &nbsp;&nbsp;<font color="red">32% OFF</font></h2>
+<button class="btn">Add to Cart</button>
+</div>
+
+<div class="p1">
+<a href="hm/30.jpg"><img src="hm/30.jpg" alt="shoes" style="width:100%;"></a>
+<h3>H&M Man Denim Jacket</h3>
+<h2><s>&#8377;4760</s>&nbsp;&nbsp; &#8377;3094 &nbsp;&nbsp;<font color="red">35% OFF</font></h2>
+<button class="btn">Add to Cart</button>
+</div>
+
+<div class="p1">
+<a href="hm/31.jpg"><img src="hm/31.jpg" alt="shoes" style="width:100%;"></a>
+<h3>H&M Man Long Coat</h3>
+<h2><s>&#8377;4550</s>&nbsp;&nbsp; &#8377;3185 &nbsp;&nbsp;<font color="red">30% OFF</font></h2>
+<button class="btn">Add to Cart</button>
+</div>
+
+<div class="p1">
+<a href="hm/32.jpg"><img src="hm/32.jpg" alt="shoes" style="width:100%;"></a>
+<h3>H&M Women Jacket</h3>
+<h2><s>&#8377;6500</s>&nbsp;&nbsp; &#8377;4550 &nbsp;&nbsp;<font color="red">30% OFF</font></h2>
+<button class="btn">Add to Cart</button>
+</div>
+
+<div class="p1">
+<a href="hm/33.jpg"><img src="hm/33.jpg" alt="shoes" style="width:100%;"></a>
+<h3>H&M Montif-Front Hoodie</h3>
+<h2><s>&#8377;3600</s>&nbsp;&nbsp; &#8377;2340 &nbsp;&nbsp;<font color="red">35% OFF</font></h2>
+<button class="btn">Add to Cart</button>
+</div>
+
+<div class="p1">
+<a href="hm/34.jpg"><img src="hm/34.jpg" alt="shoes" style="width:100%;"></a>
+<h3>H&M Relaxed Fit Hoodie</h3>
+<h2><s>&#8377;3950</s>&nbsp;&nbsp; &#8377;2690 &nbsp;&nbsp;<font color="red">32% OFF</font></h2>
+<button class="btn">Add to Cart</button>
+</div>
+
+<div class="p1">
+<a href="hm/35.jpg"><img src="hm/35.jpg" alt="shoes" style="width:100%;"></a>
+<h3>H&M Man Denim Jacket</h3>
+<h2><s>&#8377;4760</s>&nbsp;&nbsp; &#8377;3094 &nbsp;&nbsp;<font color="red">35% OFF</font></h2>
+<button class="btn">Add to Cart</button>
+</div>
+
+<div class="p1">
+<a href="hm/36.jpg"><img src="hm/36.jpg" alt="shoes" style="width:100%;"></a>
+<h3>H&M Man Long Coat</h3>
+<h2><s>&#8377;4550</s>&nbsp;&nbsp; &#8377;3185 &nbsp;&nbsp;<font color="red">30% OFF</font></h2>
+<button class="btn">Add to Cart</button>
+</div>
+
+<div class="p1">
+<a href="hm/37.jpg"><img src="hm/37.jpg" alt="shoes" style="width:100%;"></a>
+<h3>H&M Women Jacket</h3>
+<h2><s>&#8377;6500</s>&nbsp;&nbsp; &#8377;4550 &nbsp;&nbsp;<font color="red">30% OFF</font></h2>
+<button class="btn">Add to Cart</button>
+</div>
+
+<div class="p1">
+<a href="hm/38.jpg"><img src="hm/38.jpg" alt="shoes" style="width:100%;"></a>
+<h3>H&M Montif-Front Hoodie</h3>
+<h2><s>&#8377;3600</s>&nbsp;&nbsp; &#8377;2340 &nbsp;&nbsp;<font color="red">35% OFF</font></h2>
+<button class="btn">Add to Cart</button>
+</div>
+
+<div class="p1">
+<a href="hm/39.jpg"><img src="hm/39.jpg" alt="shoes" style="width:100%;"></a>
+<h3>H&M Relaxed Fit Hoodie</h3>
+<h2><s>&#8377;3950</s>&nbsp;&nbsp; &#8377;2690 &nbsp;&nbsp;<font color="red">32% OFF</font></h2>
+<button class="btn">Add to Cart</button>
+</div>
+
+<div class="p1">
+<a href="hm/40.jpg"><img src="hm/40.jpg" alt="shoes" style="width:100%;"></a>
+<h3>H&M Man Denim Jacket</h3>
+<h2><s>&#8377;4760</s>&nbsp;&nbsp; &#8377;3094 &nbsp;&nbsp;<font color="red">35% OFF</font></h2>
+<button class="btn">Add to Cart</button>
+</div>
+
+
+</div>
+
+</div>
+
+
+<div class="brand">
+<img class="logo" src="logo/levis.png" alt="logo">
+<div class="brand-p">
+<div class="p1">
+<a href="levis/1.jpg"><img src="levis/1.jpg" alt="shoes" style="width:100%;"></a>
+<h3>Levi's T-shirt Half-sleeve</h3>
+<h2><s>&#8377;4550</s>&nbsp;&nbsp; &#8377;3185 &nbsp;&nbsp;<font color="red">30% OFF</font></h2>
+<button class="btn">Add to Cart</button>
+</div>
+
+<div class="p1">
+<a href="levis/2.jpg"><img src="levis/2.jpg" alt="shoes" style="width:100%;"></a>
+<h3>Levi's Man Shirt White</h3>
+<h2><s>&#8377;6500</s>&nbsp;&nbsp; &#8377;4550 &nbsp;&nbsp;<font color="red">30% OFF</font></h2>
+<button class="btn">Add to Cart</button>
+</div>
+
+<div class="p1">
+<a href="levis/3.jpg"><img src="levis/3.jpg" alt="shoes" style="width:100%;"></a>
+<h3>Levi's Woman Hoodie White</h3>
+<h2><s>&#8377;3600</s>&nbsp;&nbsp; &#8377;2340 &nbsp;&nbsp;<font color="red">35% OFF</font></h2>
+<button class="btn">Add to Cart</button>
+</div>
+
+<div class="p1">
+<a href="levis/4.jpg"><img src="levis/4.jpg" alt="shoes" style="width:100%;"></a>
+<h3>Levi's T-shirt Full-sleeve</h3>
+<h2><s>&#8377;3950</s>&nbsp;&nbsp; &#8377;2690 &nbsp;&nbsp;<font color="red">32% OFF</font></h2>
+<button class="btn">Add to Cart</button>
+</div>
+
+<div class="p1">
+<a href="levis/5.jpg"><img src="levis/5.jpg" alt="shoes" style="width:100%;"></a>
+<h3>Levi's Man Jacket Black</h3>
+<h2><s>&#8377;4760</s>&nbsp;&nbsp; &#8377;3094 &nbsp;&nbsp;<font color="red">35% OFF</font></h2>
+<button class="btn">Add to Cart</button>
+</div>
+
+<div class="p1">
+<a href="levis/6.jpg"><img src="levis/6.jpg" alt="shoes" style="width:100%;"></a>
+<h3>Levi's T-shirt Half-sleeve</h3>
+<h2><s>&#8377;4550</s>&nbsp;&nbsp; &#8377;3185 &nbsp;&nbsp;<font color="red">30% OFF</font></h2>
+<button class="btn">Add to Cart</button>
+</div>
+
+<div class="p1">
+<a href="levis/7.jpg"><img src="levis/7.jpg" alt="shoes" style="width:100%;"></a>
+<h3>Levi's Man Shirt White</h3>
+<h2><s>&#8377;6500</s>&nbsp;&nbsp; &#8377;4550 &nbsp;&nbsp;<font color="red">30% OFF</font></h2>
+<button class="btn">Add to Cart</button>
+</div>
+
+<div class="p1">
+<a href="levis/8.jpg"><img src="levis/8.jpg" alt="shoes" style="width:100%;"></a>
+<h3>Levi's Woman Hoodie White</h3>
+<h2><s>&#8377;3600</s>&nbsp;&nbsp; &#8377;2340 &nbsp;&nbsp;<font color="red">35% OFF</font></h2>
+<button class="btn">Add to Cart</button>
+</div>
+
+<div class="p1">
+<a href="levis/9.jpg"><img src="levis/9.jpg" alt="shoes" style="width:100%;"></a>
+<h3>Levi's T-shirt Full-sleeve</h3>
+<h2><s>&#8377;3950</s>&nbsp;&nbsp; &#8377;2690 &nbsp;&nbsp;<font color="red">32% OFF</font></h2>
+<button class="btn">Add to Cart</button>
+</div>
+
+<div class="p1">
+<a href="levis/10.jpg"><img src="levis/10.jpg" alt="shoes" style="width:100%;"></a>
+<h3>Levi's Man Jacket Black</h3>
+<h2><s>&#8377;4760</s>&nbsp;&nbsp; &#8377;3094 &nbsp;&nbsp;<font color="red">35% OFF</font></h2>
+<button class="btn">Add to Cart</button>
+</div>
+
+<div class="p1">
+<a href="levis/11.jpg"><img src="levis/11.jpg" alt="shoes" style="width:100%;"></a>
+<h3>Levi's T-shirt Half-sleeve</h3>
+<h2><s>&#8377;4550</s>&nbsp;&nbsp; &#8377;3185 &nbsp;&nbsp;<font color="red">30% OFF</font></h2>
+<button class="btn">Add to Cart</button>
+</div>
+
+<div class="p1">
+<a href="levis/12.jpg"><img src="levis/12.jpg" alt="shoes" style="width:100%;"></a>
+<h3>Levi's Man Shirt White</h3>
+<h2><s>&#8377;6500</s>&nbsp;&nbsp; &#8377;4550 &nbsp;&nbsp;<font color="red">30% OFF</font></h2>
+<button class="btn">Add to Cart</button>
+</div>
+
+<div class="p1">
+<a href="levis/13.jpg"><img src="levis/13.jpg" alt="shoes" style="width:100%;"></a>
+<h3>Levi's Woman Hoodie White</h3>
+<h2><s>&#8377;3600</s>&nbsp;&nbsp; &#8377;2340 &nbsp;&nbsp;<font color="red">35% OFF</font></h2>
+<button class="btn">Add to Cart</button>
+</div>
+
+<div class="p1">
+<a href="levis/14.jpg"><img src="levis/14.jpg" alt="shoes" style="width:100%;"></a>
+<h3>Levi's T-shirt Full-sleeve</h3>
+<h2><s>&#8377;3950</s>&nbsp;&nbsp; &#8377;2690 &nbsp;&nbsp;<font color="red">32% OFF</font></h2>
+<button class="btn">Add to Cart</button>
+</div>
+
+<div class="p1">
+<a href="levis/15.jpg"><img src="levis/15.jpg" alt="shoes" style="width:100%;"></a>
+<h3>Levi's Man Jacket Black</h3>
+<h2><s>&#8377;4760</s>&nbsp;&nbsp; &#8377;3094 &nbsp;&nbsp;<font color="red">35% OFF</font></h2>
+<button class="btn">Add to Cart</button>
+</div>
+
+<div class="p1">
+<a href="levis/16.jpg"><img src="levis/16.jpg" alt="shoes" style="width:100%;"></a>
+<h3>Levi's T-shirt Half-sleeve</h3>
+<h2><s>&#8377;4550</s>&nbsp;&nbsp; &#8377;3185 &nbsp;&nbsp;<font color="red">30% OFF</font></h2>
+<button class="btn">Add to Cart</button>
+</div>
+
+<div class="p1">
+<a href="levis/17.jpg"><img src="levis/17.jpg" alt="shoes" style="width:100%;"></a>
+<h3>Levi's Man Shirt White</h3>
+<h2><s>&#8377;6500</s>&nbsp;&nbsp; &#8377;4550 &nbsp;&nbsp;<font color="red">30% OFF</font></h2>
+<button class="btn">Add to Cart</button>
+</div>
+
+<div class="p1">
+<a href="levis/18.jpg"><img src="levis/18.jpg" alt="shoes" style="width:100%;"></a>
+<h3>Levi's Woman Hoodie White</h3>
+<h2><s>&#8377;3600</s>&nbsp;&nbsp; &#8377;2340 &nbsp;&nbsp;<font color="red">35% OFF</font></h2>
+<button class="btn">Add to Cart</button>
+</div>
+
+<div class="p1">
+<a href="levis/19.jpg"><img src="levis/19.jpg" alt="shoes" style="width:100%;"></a>
+<h3>Levi's T-shirt Full-sleeve</h3>
+<h2><s>&#8377;3950</s>&nbsp;&nbsp; &#8377;2690 &nbsp;&nbsp;<font color="red">32% OFF</font></h2>
+<button class="btn">Add to Cart</button>
+</div>
+
+<div class="p1">
+<a href="levis/20.jpg"><img src="levis/20.jpg" alt="shoes" style="width:100%;"></a>
+<h3>Levi's Man Jacket Black</h3>
+<h2><s>&#8377;4760</s>&nbsp;&nbsp; &#8377;3094 &nbsp;&nbsp;<font color="red">35% OFF</font></h2>
+<button class="btn">Add to Cart</button>
+</div>
+
+<div class="p1">
+<a href="levis/21.jpg"><img src="levis/21.jpg" alt="shoes" style="width:100%;"></a>
+<h3>Levi's T-shirt Half-sleeve</h3>
+<h2><s>&#8377;4550</s>&nbsp;&nbsp; &#8377;3185 &nbsp;&nbsp;<font color="red">30% OFF</font></h2>
+<button class="btn">Add to Cart</button>
+</div>
+
+<div class="p1">
+<a href="levis/22.jpg"><img src="levis/22.jpg" alt="shoes" style="width:100%;"></a>
+<h3>Levi's Man Shirt White</h3>
+<h2><s>&#8377;6500</s>&nbsp;&nbsp; &#8377;4550 &nbsp;&nbsp;<font color="red">30% OFF</font></h2>
+<button class="btn">Add to Cart</button>
+</div>
+
+<div class="p1">
+<a href="levis/23.jpg"><img src="levis/23.jpg" alt="shoes" style="width:100%;"></a>
+<h3>Levi's Woman Hoodie White</h3>
+<h2><s>&#8377;3600</s>&nbsp;&nbsp; &#8377;2340 &nbsp;&nbsp;<font color="red">35% OFF</font></h2>
+<button class="btn">Add to Cart</button>
+</div>
+
+<div class="p1">
+<a href="levis/24.jpg"><img src="levis/24.jpg" alt="shoes" style="width:100%;"></a>
+<h3>Levi's T-shirt Full-sleeve</h3>
+<h2><s>&#8377;3950</s>&nbsp;&nbsp; &#8377;2690 &nbsp;&nbsp;<font color="red">32% OFF</font></h2>
+<button class="btn">Add to Cart</button>
+</div>
+
+<div class="p1">
+<a href="levis/25.jpg"><img src="levis/25.jpg" alt="shoes" style="width:100%;"></a>
+<h3>Levi's Man Jacket Black</h3>
+<h2><s>&#8377;4760</s>&nbsp;&nbsp; &#8377;3094 &nbsp;&nbsp;<font color="red">35% OFF</font></h2>
+<button class="btn">Add to Cart</button>
+</div>
+
+<div class="p1">
+<a href="levis/26.jpg"><img src="levis/26.jpg" alt="shoes" style="width:100%;"></a>
+<h3>Levi's T-shirt Half-sleeve</h3>
+<h2><s>&#8377;4550</s>&nbsp;&nbsp; &#8377;3185 &nbsp;&nbsp;<font color="red">30% OFF</font></h2>
+<button class="btn">Add to Cart</button>
+</div>
+
+<div class="p1">
+<a href="levis/27.jpg"><img src="levis/27.jpg" alt="shoes" style="width:100%;"></a>
+<h3>Levi's Man Shirt White</h3>
+<h2><s>&#8377;6500</s>&nbsp;&nbsp; &#8377;4550 &nbsp;&nbsp;<font color="red">30% OFF</font></h2>
+<button class="btn">Add to Cart</button>
+</div>
+
+<div class="p1">
+<a href="levis/28.jpg"><img src="levis/28.jpg" alt="shoes" style="width:100%;"></a>
+<h3>Levi's Woman Hoodie White</h3>
+<h2><s>&#8377;3600</s>&nbsp;&nbsp; &#8377;2340 &nbsp;&nbsp;<font color="red">35% OFF</font></h2>
+<button class="btn">Add to Cart</button>
+</div>
+
+<div class="p1">
+<a href="levis/29.jpg"><img src="levis/29.jpg" alt="shoes" style="width:100%;"></a>
+<h3>Levi's T-shirt Full-sleeve</h3>
+<h2><s>&#8377;3950</s>&nbsp;&nbsp; &#8377;2690 &nbsp;&nbsp;<font color="red">32% OFF</font></h2>
+<button class="btn">Add to Cart</button>
+</div>
+
+<div class="p1">
+<a href="levis/30.jpg"><img src="levis/30.jpg" alt="shoes" style="width:100%;"></a>
+<h3>Levi's Man Jacket Black</h3>
+<h2><s>&#8377;4760</s>&nbsp;&nbsp; &#8377;3094 &nbsp;&nbsp;<font color="red">35% OFF</font></h2>
+<button class="btn">Add to Cart</button>
+</div>
+
+<div class="p1">
+<a href="levis/31.jpg"><img src="levis/31.jpg" alt="shoes" style="width:100%;"></a>
+<h3>Levi's T-shirt Half-sleeve</h3>
+<h2><s>&#8377;4550</s>&nbsp;&nbsp; &#8377;3185 &nbsp;&nbsp;<font color="red">30% OFF</font></h2>
+<button class="btn">Add to Cart</button>
+</div>
+
+<div class="p1">
+<a href="levis/32.jpg"><img src="levis/32.jpg" alt="shoes" style="width:100%;"></a>
+<h3>Levi's Man Shirt White</h3>
+<h2><s>&#8377;6500</s>&nbsp;&nbsp; &#8377;4550 &nbsp;&nbsp;<font color="red">30% OFF</font></h2>
+<button class="btn">Add to Cart</button>
+</div>
+
+<div class="p1">
+<a href="levis/33.jpg"><img src="levis/33.jpg" alt="shoes" style="width:100%;"></a>
+<h3>Levi's Woman Hoodie White</h3>
+<h2><s>&#8377;3600</s>&nbsp;&nbsp; &#8377;2340 &nbsp;&nbsp;<font color="red">35% OFF</font></h2>
+<button class="btn">Add to Cart</button>
+</div>
+
+<div class="p1">
+<a href="levis/34.jpg"><img src="levis/34.jpg" alt="shoes" style="width:100%;"></a>
+<h3>Levi's T-shirt Full-sleeve</h3>
+<h2><s>&#8377;3950</s>&nbsp;&nbsp; &#8377;2690 &nbsp;&nbsp;<font color="red">32% OFF</font></h2>
+<button class="btn">Add to Cart</button>
+</div>
+
+<div class="p1">
+<a href="levis/35.jpg"><img src="levis/35.jpg" alt="shoes" style="width:100%;"></a>
+<h3>Levi's Man Jacket Black</h3>
+<h2><s>&#8377;4760</s>&nbsp;&nbsp; &#8377;3094 &nbsp;&nbsp;<font color="red">35% OFF</font></h2>
+<button class="btn">Add to Cart</button>
+</div>
+
+<div class="p1">
+<a href="levis/36.jpg"><img src="levis/36.jpg" alt="shoes" style="width:100%;"></a>
+<h3>Levi's T-shirt Half-sleeve</h3>
+<h2><s>&#8377;4550</s>&nbsp;&nbsp; &#8377;3185 &nbsp;&nbsp;<font color="red">30% OFF</font></h2>
+<button class="btn">Add to Cart</button>
+</div>
+
+<div class="p1">
+<a href="levis/37.jpg"><img src="levis/37.jpg" alt="shoes" style="width:100%;"></a>
+<h3>Levi's Man Shirt White</h3>
+<h2><s>&#8377;6500</s>&nbsp;&nbsp; &#8377;4550 &nbsp;&nbsp;<font color="red">30% OFF</font></h2>
+<button class="btn">Add to Cart</button>
+</div>
+
+<div class="p1">
+<a href="levis/38.jpg"><img src="levis/38.jpg" alt="shoes" style="width:100%;"></a>
+<h3>Levi's Woman Hoodie White</h3>
+<h2><s>&#8377;3600</s>&nbsp;&nbsp; &#8377;2340 &nbsp;&nbsp;<font color="red">35% OFF</font></h2>
+<button class="btn">Add to Cart</button>
+</div>
+
+<div class="p1">
+<a href="levis/39.jpg"><img src="levis/39.jpg" alt="shoes" style="width:100%;"></a>
+<h3>Levi's T-shirt Full-sleeve</h3>
+<h2><s>&#8377;3950</s>&nbsp;&nbsp; &#8377;2690 &nbsp;&nbsp;<font color="red">32% OFF</font></h2>
+<button class="btn">Add to Cart</button>
+</div>
+
+<div class="p1">
+<a href="levis/40.jpg"><img src="levis/40.jpg" alt="shoes" style="width:100%;"></a>
+<h3>Levi's Man Jacket Black</h3>
+<h2><s>&#8377;4760</s>&nbsp;&nbsp; &#8377;3094 &nbsp;&nbsp;<font color="red">35% OFF</font></h2>
+<button class="btn">Add to Cart</button>
+</div>
+
+<div class="p1">
+<a href="levis/41.jpg"><img src="levis/41.jpg" alt="shoes" style="width:100%;"></a>
+<h3>Levi's T-shirt Half-sleeve</h3>
+<h2><s>&#8377;4550</s>&nbsp;&nbsp; &#8377;3185 &nbsp;&nbsp;<font color="red">30% OFF</font></h2>
+<button class="btn">Add to Cart</button>
+</div>
+
+<div class="p1">
+<a href="levis/42.jpg"><img src="levis/42.jpg" alt="shoes" style="width:100%;"></a>
+<h3>Levi's Man Shirt White</h3>
+<h2><s>&#8377;6500</s>&nbsp;&nbsp; &#8377;4550 &nbsp;&nbsp;<font color="red">30% OFF</font></h2>
+<button class="btn">Add to Cart</button>
+</div>
+
+<div class="p1">
+<a href="levis/43.jpg"><img src="levis/43.jpg" alt="shoes" style="width:100%;"></a>
+<h3>Levi's Woman Hoodie White</h3>
+<h2><s>&#8377;3600</s>&nbsp;&nbsp; &#8377;2340 &nbsp;&nbsp;<font color="red">35% OFF</font></h2>
+<button class="btn">Add to Cart</button>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+
+<div class="footer-top">
+<div class="footer-img">
+<img src="logo.jpg" alt="logo">
+</div>
+<p>These stores are owned or authorized by the brand itself and are dedicated to showcasing and selling items that carry the brand's logo, name, or distinctive features.</p>
+<div class="footer-social">
+<a href="insta.html"><img class="social" src="insta.png" alt="logo"></a>
+<a href="fb.html"><img class="social" src="fb.png" alt="logo"></a>
+<a href="twtr.html"><img class="social" src="twtr.png" alt="logo"></a>
+<a href="wapp.html"><img class="social" src="wapp.png" alt="logo"></a>
+</div>
+
+</div>
+
+
+<div class="footer-bottom">
+<p>Copyright @2023 BRAND STORE. Created by <font color="#9d9d9d">Narendar Karwasra</font></p>
+</div>

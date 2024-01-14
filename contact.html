@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Abc...</title>
+</head>
+<style>
+
+*{
+box-sizing:border-box;
+
+}
+body{
+background-color:#96a98b;
+}
+
+.navbar{
+	display:flex;
+	width:100%;
+	justify-content:center;
+	list-style-type:none;
+	padding:0;
+}
+.navbar a{
+	text-decoration:none;
+	text-align:center;
+	font-size:4vh;
+	color:black;
+	display:block;
+	text-align:center;
+	padding:0.5vw 2vw;
+}
+
+.dropdown{
+display:inline-block;
+}
+.dropdown-content{
+	display:none;
+	position:absolute;
+	z-index:1;
+}
+.dropdown-content a{
+	text-align:center;
+	display:block;
+}
+.dropdown:hover .dropdown-content{
+	display:block;
+}
+
+.navbar a:hover{
+	background:#bd8839;
+	transition:ease .2s;
+	border-radius:35px;
+	color:white;
+}
+
+
+
+.container{
+height:35%;
+text-align:center;
+margin:5% auto 0;
+
+}
+h1{
+padding-top:0;
+font-size:3vw;
+}
+h3{
+font-size:2vw;
+}
+.container img{
+width:10%;
+float:center;
+padding:0 0 0 5%;
+transform:translate(-25%); 
+}
+.row:after{
+content:"";
+display:table;
+clear:both;
+}
+
+
+
+.footer-top{
+	width:100%;	
+	text-align:center;
+	padding:3% 10%;
+	margin-top:0;
+}
+.footer-img{
+	width:30%;
+	margin:auto;
+}
+.footer-img img{
+	width:100%;
+}
+.footer-top p{
+	font-size:3.5vh;
+}
+.footer-social{
+	margin:2% 0 0 0;
+}
+.footer-social .social{
+	width:7%;
+	margin-right:1%;
+	cursor:pointer;
+}
+
+.footer-social .social:hover{
+	border-radius:50%;
+	box-shadow:5px 5px 10px gray;
+}
+
+.footer-bottom{
+	text-align:center;
+	background-color:#525e4c;
+	font-size:3vh;
+	padding:.1%;
+}
+
+
+
+
+
+@media screen and (max-width:900px){
+.navbar{
+    display:block;
+}
+.navbar a{
+	font-size:4.3vh;
+	padding:0.5vh 0vw;
+}
+.dropdown{
+    display:block;
+}
+.dropdown-content{
+position:static;
+width:100%;
+}
+
+
+.container{
+margin:5% auto;
+}
+h1{
+font-size:5vw;
+}
+.container img{
+width:16%;
+padding:0 0 0 7%; 
+}
+h3{
+font-size:3vw;
+}
+
+
+.footer-img{
+	width:40%;
+}
+.footer-top p{
+	font-size:3vh;
+}
+.footer-social .social{
+	width:8%;
+}
+.footer-bottom{
+	font-size:2.5vh;
+}	
+}
+
+
+
+
+@media screen and (max-width:500px){
+.navbar a{
+	font-size:6vw;
+	padding:0.5vw 2vw;
+}
+
+.container img{
+width:18%;
+padding:0 0 0 7%; 
+}
+h1{
+font-size:7vw;
+}
+h3{
+font-size:4.5vw;
+}
+
+
+.footer-img{
+	width:50%;
+}
+.footer-top p{
+	font-size:4vw;
+}
+.footer-social .social{
+	width:12%;
+}
+.footer-bottom{
+	font-size:3.2vw;
+}	
+}
+
+
+
+
+</style>
+</head>
+
+
+
+<ul class="navbar">
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="news.html">News</a></li>
+<li><a href="contact.html">Contact</a></li>
+<li class="dropdown"><a href="shop.html">Brands</a>
+    <div class="dropdown-content">
+	    <a href="reebok.html">Reebok</a> 
+	    <a href="nike.html">Nike</a> 
+	    <a href="hm.html">H&M</a> 
+	    <a href="levis.html">Levi's</a> 
+	</div>
+</li>
+</ul>
+
+
+
+<div class="container">
+<h1>Contact us</h1><hr>
+<br>
+<div class="row">
+<img src="phone.png">
+<h3>+91 9876543210
+<br>
++91 7856342367
+</h3>
+</div>
+
+<div class="row">
+<img src="gmail.png">
+<h3>nk123@gmail.com
+<br>
+cg123@gmail.com
+</h3>
+</div>
+
+<div class="row">
+<img src="location.png">
+<h3>Near balvatika,vans chowk,
+<br>
+Nohar, Rajasthan
+</h3>
+</div>
+</div>
+
+
+<hr>
+<div class="footer-top">
+<div class="footer-img">
+<img src="logo.jpg" alt="logo">
+</div>
+<p>These stores are owned or authorized by the brand itself and are dedicated to showcasing and selling items that carry the brand's logo, name, or distinctive features.</p>
+<div class="footer-social">
+<a href="insta.html"><img class="social" src="insta.png" alt="logo"></a>
+<a href="fb.html"><img class="social" src="fb.png" alt="logo"></a>
+<a href="twtr.html"><img class="social" src="twtr.png" alt="logo"></a>
+<a href="wapp.html"><img class="social" src="wapp.png" alt="logo"></a>
+</div>
+
+
+</div>
+
+<div class="footer-bottom">
+<p>Copyright @2023 BRAND STORE. Created by <font color="#9d9d9d">Narendar Karwasra</font></p>
+</div>
+
