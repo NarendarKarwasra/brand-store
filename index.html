@@ -1,0 +1,1202 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Abc...</title>
+
+</head>
+<style>
+*{
+    box-sizing:border-box;
+}
+body{	
+    margin:0;
+}
+
+.home{
+	display:flex;
+}
+.home-left{
+	flex:40%;
+}
+.home-logo{
+	margin:5% 0 0 5%;
+	width:40%;
+}
+.home-logo img{
+	width:100%;
+}
+.home-detail{
+	margin-left:13%;
+}
+.home-detail h1{
+	font-size:5vw;
+	margin-top:15%;
+}
+.home-detail p{
+	margin-top:-6%;
+	font-size:1.3vw;
+}
+.home-detail .btn{
+	margin-top:3%;
+	font-size:1.5vw;
+	border:none;
+	border-radius:35px;
+	background-color:black;
+	color:white;
+	padding:3% 8%;
+	font-weight:bold;
+	cursor:pointer;
+	text-decoration:none;
+}
+.home-shop{
+	margin-top:10%;
+}
+.home-detail .btn:hover{
+	background:#96a98b;
+	color:black;
+	transition:ease .2s;
+}
+.home-social{
+	margin:10% 0 5% 0;
+}
+.home-social .social{
+	width:10%;
+	margin-right:1%;
+	cursor:pointer;
+}
+.home-social .social:hover{
+	border-radius:50%;
+	box-shadow:5px 5px 10px gray;
+}
+
+
+.home-right{
+	flex:60%;
+	background:url(home.jpg) no-repeat;
+	background-size:100%;
+}
+
+
+
+.home-right .navbar{
+	display:flex;
+	width:100%;
+	justify-content:center;
+	list-style-type:none;
+	padding:0;
+}
+.home-right .navbar li a{
+	text-decoration:none;
+	text-align:center;
+	font-size:2vw;
+	color:black;
+	display:block;
+	text-align:center;
+	padding:0.5vw 2vw;
+}
+li.dropdown{
+	display:inline-block;
+}
+.dropdown-content{
+	display:none;
+	position:absolute;
+	z-index:1;
+}
+.dropdown-content a{
+	text-align:left;
+	display:block;
+	background-color:#96a98b;
+}
+.dropdown:hover .dropdown-content{
+	display:block;
+}
+
+.home-right .navbar a:hover{
+	background:#bd8839;
+	transition:ease .2s;
+	border-radius:35px;
+	color:white;
+}
+
+
+.logo{
+	width:100%;
+	background-color:#d5b27a;
+}
+.logo h2{
+	padding-top:1%;
+	text-align:center;
+	font-size:3.5vw;
+}
+.logo-img{
+	display:flex;
+	justify-content:center;
+	padding-bottom:1%;
+	grid-gap:6vw;
+	
+}
+.logo-img img{
+	width:11%;
+}
+
+
+.new{
+	width:60%;
+	margin:0 auto;
+}
+.new h2{
+	margin-bottom:4%;
+	padding-top:1%;
+	text-align:center;
+	font-size:3.5vw;
+}
+.new-ar{
+	
+}
+.new-left{
+	width:48%;
+	float:left;
+	margin-right:2%;	
+}
+
+.new-right{
+	width:48%;
+	float:left;
+	margin-left:2%;
+}
+.new-ar a{
+	cursor:pointer;
+	text-decoration:none;
+	color:black;
+	
+}
+.new-ar img{
+	width:100%;
+	opacity:1;
+	background-color:#bd8839;
+	border-radius:2%;
+}
+.new-ar img:hover{
+	opacity:0.8;
+}
+.new-ar h3{
+	margin-top:-1%;
+	text-align:center;
+	font-size:2vw;
+	background-color:#bd8839;
+	padding:3%;
+	border-radius:0%;
+}
+.new-ar h3:hover{
+	background-color:#96a98b;
+	transition:ease .2s;
+}
+
+
+.shopping{
+	content:"";
+	clear:both;
+	display:table;
+	width:90%;
+	margin:auto;
+}
+.shopping h3{
+	font-size:2.5vw;
+}
+
+.men{
+	background:url(men.jpg) no-repeat;
+	background-size:100%;
+	width:100%;
+	height:100%;
+	padding-bottom:10%;
+}
+.women{
+	background:url(women.jpg) no-repeat;
+	background-size:100%;
+	width:100%;
+	height:100%;
+	margin-top:2%;
+	padding-bottom:10%;
+}
+.men h1{
+	font-size:4vw;
+	margin:0 15%;
+	padding:8% 0 2% 0;
+}
+.women h1{
+	font-size:4vw;
+	margin:0;
+	margin-left:45%;
+	padding:8% 0 2% 0;
+}
+.shop .btn-shop{
+	font-size:2vw;
+	font-weight:bold;
+	background:transparent;
+	margin:0 0 5% 15%;
+	padding:0.5% 8%;
+	border:.3vw solid black;
+	cursor:pointer;
+	text-decoration:none;
+	color:black;
+}
+.women .btn-shop{
+	margin-left:45%;
+}
+.shop .btn-shop:hover{
+	background-color:#96a98b;
+	transition:ease .2s;
+}
+
+
+.brand{
+	width:90%;
+	margin:auto;
+	content:"";
+	clear:both;
+	display:table;
+}
+.brand-logo{
+    width:20%;
+	margin-left:50%;
+	transform:translate(-50%);
+	margin-bottom:2%;
+	margin-top:5%;
+}
+.p1{
+	width:19%;
+	float:left;
+	margin:0 0.5% 0 0.5%;
+}
+.p1:hover{
+	opacity:0.8;
+}
+.p1 h3{
+	font-size:2vw;
+	margin:2%;
+	font-weight:400;
+}
+.p1 h2{
+	font-size:1.5vw;
+	margin:2%;
+	font-weight:400;
+}
+.p1 .btn{
+	margin-top:3%;
+	font-size:1.5vw;
+	border:none;
+	border-radius:10px;
+	padding:2% 10%;
+	cursor:pointer;
+	margin-left:15%;
+}
+.p1 .btn:hover{
+	background:#96a98b;
+	transition:ease .2s;
+}
+
+
+.cs{
+	width:90%;
+	margin:10% auto 5%;
+	border:1px solid black;
+	content:"";
+	clear:both;
+	display:table;
+}
+.cs-img{
+	width:50%;
+	float:left;
+}
+.cs-img img{
+	width:100%;
+}
+.cs-text{
+	width:50%;
+	float:left;
+	text-align:center;
+	margin-top:10%;
+}
+.cs-text h1{
+	font-size:5vw;
+}
+.cs-text h2{
+	font-size:4vw;
+}
+.cs-text p{
+	font-size:2vw;
+}
+
+
+.about{
+	width:90%;
+	margin:auto;
+	background-color:#96a98b;
+	content:"";
+	clear:both;
+	display:table;
+	padding:2%;
+}
+.ab-img{
+	width:20%;
+	float:left;
+	padding-top:2.5%;
+	margin-right:10%;
+}
+.ab-img img{
+	width:100%;
+}
+.ab-text{
+	width:70%;
+	float:left;
+}
+.ab-text p{
+	font-size:1.5vw;
+}
+
+
+.reg{
+	margin-top:2%;
+	padding-bottom:3%;
+	text-align:center;
+	}
+.reg h1{
+	font-size:4vw;
+	margin-bottom:0;
+}
+.reg-cont{
+	width:100%;
+	margin:auto;
+}
+.left-reg{
+	float:left;
+	width:30%;
+	margin-left:22%;
+}
+.right-reg{
+	float:left;
+	width:30%;
+}
+.reg-cont:after{
+	content:"";
+	display:table;
+	clear:both;
+}
+.left-reg input,.right-reg input{
+	display:block;
+}
+.reg input[type=submit]{
+	padding:.5% 3%;
+	font-size:2vw;
+	margin-top:3%;
+	cursor:pointer;
+}
+.reg input[type=submit]:hover{
+	background-color:#96a98b;
+	transition:ease .2s;
+}
+input[type=text], input[type=email], input[type=tel]
+{
+	width:80%;	
+	padding:4%;
+	font-size:1.5vw;
+	border:none;
+	border-bottom:.2vw solid black;
+	margin-top:4%;
+	opacity:0.7;
+}
+
+input[type=text]:focus, input[type=email]:focus, input[type=tel]:focus{
+	opacity:1.0;
+}
+
+
+.footer-top{
+	width:100%;
+	text-align:center;
+	background-color:#96a98b;
+	padding:3% 15%;
+}
+.footer-img{
+	width:30%;
+	margin:auto;
+}
+.footer-img img{
+	width:100%;
+}
+.footer-top p{
+	font-size:2vw;
+}
+.footer-social{
+	margin:2% 0 0 0;
+}
+.footer-social .social{
+	width:6%;
+	margin-right:1%;
+	cursor:pointer;
+}
+.footer-social .social:hover{
+	border-radius:50%;
+	box-shadow:5px 5px 10px gray;
+}
+
+.footer-bottom{
+	text-align:center;
+	background-color:#525e4c;
+	font-size:1.5vw;
+	padding:.1%;
+}
+
+
+
+
+@media screen and (max-width:900px){
+.home{
+	display:block;
+}
+.home-left{
+	margin-top:12%;
+}
+.home-logo{
+	margin:2% auto;
+	width:35%;
+}
+.home-detail{
+	margin-left:0;
+	text-align:center;
+}
+.home-detail h1{
+	font-size:8vw;
+	margin-top:0;
+	line-height:100%;
+}
+.home-detail p{
+	margin-top:-4%;
+	font-size:3vw;
+}
+.home-detail .btn{
+	margin-top:2%;
+	font-size:3.2vw;
+	padding:1.5% 5%;
+}
+.home-shop{
+	margin-top:5%;
+}
+.home-social{
+	margin:5% 0 5% 0;
+}
+.home-social .social{
+	width:7%;
+}
+.home-right{
+	width:100%;
+	padding-left:8%;
+	position:absolute;
+	top:0;
+	background:none;
+	background-color:#96a98b;
+}
+
+
+
+.home-right .navbar{
+	display:block;
+	padding-bottom:5%;
+}
+.home-right .navbar li{
+	float:left;
+}
+.home-right .navbar li a{
+	font-size:3.8vw;
+	padding:0 2.5vw;
+}
+
+
+.logo h2{
+	padding-top:2%;
+	font-size:5vw;
+}
+.logo-img{
+	display:flex;
+	padding-bottom:3%;
+	grid-gap:6vw;
+}
+.logo-img img{
+	width:15%;
+}
+
+
+.new{
+	width:75%;
+}
+.new h2{
+	margin-bottom:4%;
+	padding-top:5%;
+	font-size:5.5vw;
+}
+.new-ar h3{
+	margin-top:-2%;
+	font-size:3.2vw;
+	padding:5%;
+}
+
+
+.shopping{
+	width:95%;
+}
+.shopping h3{
+	font-size:4vw;
+}
+.men h1{
+	font-size:5.5vw;
+	margin:0 10%;
+	padding:8% 0 3% 0;
+}
+.women h1{
+	font-size:5.5vw;
+	margin-left:40%;
+	padding:8% 0 3% 0;
+}
+.shop .btn-shop{
+	font-size:3.5vw;
+	margin:0 0 5% 10%;
+}
+.women .btn-shop{
+	margin-left:40%;
+}
+
+
+.brand{
+	width:95%;
+}
+.p1{
+	width:24%;
+}
+.p1 h3{
+	font-size:3vw;
+	margin:2%;
+}
+.p1 h2{
+	font-size:1.9vw;
+	margin:2%;
+}
+.p1 .btn{
+	margin-top:3%;
+	font-size:2.5vw;
+	margin-left:15%;
+	padding:2% 10%;
+}
+.p1-last{
+	display:none;
+}
+
+
+.cs{
+	width:95%;
+}
+.cs-text h1{
+	font-size:5.5vw;
+}
+.cs-text h2{
+	font-size:5.5vw;
+}
+.cs-text p{
+	font-size:3vw;
+}
+
+
+.about{
+	width:95%;
+}
+.ab-img{
+	width:30%;
+	float:none;
+	margin-left:50%;
+	transform:translate(-50%);
+	padding-top:2%;
+	margin-right:0;
+}
+.ab-text{
+	width:100%;
+	float:none;
+}
+.ab-text p{
+	font-size:2.4vw;
+	text-align:center;
+}
+
+
+.reg{
+	margin-top:5%;
+	padding-bottom:5%;
+}
+.reg h1{
+	font-size:6vw;
+}
+.left-reg{
+	float:left;
+	width:40%;
+	margin-left:14%;
+}
+.right-reg{
+	float:left;
+	width:40%;
+}
+.reg input[type=submit]{
+	padding:.5% 5%;
+	font-size:3.5vw;
+	margin-top:5%;
+}
+input[type=text], input[type=email], input[type=tel]
+{
+	font-size:2.5vw;
+}
+
+
+.footer-top{
+	padding:3% 10%;
+}
+.footer-img{
+	width:40%;
+}
+.footer-top p{
+	font-size:3vh;
+}
+.footer-social .social{
+	width:8%;
+}
+.footer-bottom{
+	font-size:2.5vh;
+}	
+}
+
+
+
+
+@media screen and (max-width:500px){
+
+.home-left{
+	margin-top:55%;
+}
+.home-logo{
+	width:50%;
+}
+
+.home-detail h1{
+	font-size:12vw;
+}
+.home-detail p{
+	margin-top:-6%;
+	font-size:4.5vw;
+}
+.home-detail .btn{
+	font-size:5.2vw;
+	padding:2% 8%;
+}
+.home-social{
+	margin:8% 0 5% 0;
+}
+.home-social .social{
+	width:10%;
+}
+.home-right{
+	padding-left:0;
+}
+
+
+
+.home-right .navbar{
+	display:block;
+	padding-bottom:0;
+}
+.home-right .navbar li{
+	float:none;
+}
+.home-right .navbar li a{
+	font-size:6vw;
+	padding:.8vw 2.5vw;
+}
+
+li.dropdown{
+	display:block;
+}
+.dropdown-content{
+	position:static;
+	width:100%;
+}
+.dropdown-content a{
+	text-align:center;
+}
+
+
+
+.logo h2{
+	padding-top:4%;
+	font-size:7vw;
+}
+.logo-img{
+	padding-bottom:5%;
+	grid-gap:3vw;
+}
+.logo-img img{
+	width:20%;
+}
+
+
+
+.new{
+	width:90%;
+}
+.new h2{
+	margin-bottom:5%;
+	font-size:8vw;
+}
+.new-ar h3{
+	font-size:4.8vw;
+}
+
+
+
+.shopping h3{
+	font-size:6vw;
+}
+.men h1{
+	font-size:5.8vw;
+}
+.women h1{
+	font-size:5.8vw;
+}
+.shop .btn-shop{
+	font-size:5.5vw;
+}
+
+
+.brand{
+	width:95%;
+}
+
+.brand-logo{
+    width:40%;
+}
+.p1{
+	width:49%;
+}
+.p1 h3{
+	font-size:5.8vw;
+}
+.p1 h2{
+	font-size:4vw;
+}
+.p1 .btn{
+	margin-top:3%;
+	font-size:5vw;
+	margin-left:5%;
+	padding:2% 15%;
+	margin-bottom:20%;
+}
+
+
+
+.cs-img{
+	float:none;
+	width:100%;
+}
+.cs-text{
+	float:none;
+	width:100%;
+	margin-top:0;
+}
+.cs-text h1{
+	font-size:10vw;
+	margin-top:5%;
+}
+.cs-text h2{
+	font-size:10vw;
+	margin-top:-2%;
+}
+.cs-text p{
+	font-size:6vw;
+	margin-top:-2%;
+}
+
+
+.ab-img{
+	width:50%;
+}
+.ab-text p{
+	font-size:4.5vw;
+}
+
+
+
+.reg{
+	margin-top:10%;
+	padding-bottom:10%;
+}
+.reg h1{
+	font-size:10vw;
+}
+.left-reg{
+	float:none;
+	width:85%;
+	margin-left:15%;
+}
+.right-reg{
+	float:none;;
+	width:85%;
+	margin-left:15%;
+}
+.reg input[type=submit]{
+	padding:1% 8%;
+	font-size:6vw;
+	margin-top:5%;
+}
+input[type=text], input[type=email], input[type=tel]
+{
+	font-size:4.5vw;
+	text-align:center;
+}
+
+
+
+.footer-top{
+	padding:7% 10%;
+}
+.footer-img{
+	width:60%;
+}
+.footer-top p{
+	font-size:3vh;
+}
+.footer-social .social{
+	width:15%;
+}
+.footer-bottom{
+	font-size:2.5vh;
+}	
+}
+
+
+
+</style>
+</head>
+<div class="home">
+
+<div class="home-left">
+<div class="home-logo">
+<img src="logo.jpg" alt="logo">
+</div>
+<div class="home-detail">
+<h1><span style="color:#bd8839;">MEGASALE</span> <br> FASHION <br> FLASH</h1>
+<p>Fashion is the armor to survive the reality of everyday life.<br>
+Style is a way to say who you are without having to speak.<br>
+Clothes mean nothing until someone lives in them.</p>
+<div class="home-shop"><a href="shop.html" class="btn">SHOP NOW</a></div>
+<div class="home-social">
+<a href="insta.html"><img class="social" src="insta.png" alt="logo"></a>
+<a href="fb.html"><img class="social" src="fb.png" alt="logo"></a>
+<a href="twtr.html"><img class="social" src="twtr.png" alt="logo"></a>
+<a href="wapp.html"><img class="social" src="wapp.png" alt="logo"></a>
+</div>
+</div>
+</div>
+
+<div class="home-right">
+<ul class="navbar">
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="news.html">News</a></li>
+<li><a href="contact.html">Contact</a></li>
+<li class="dropdown"><a href="shop.html">Brands</a>
+    <div class="dropdown-content">
+	    <a href="reebok.html">Reebok</a> 
+	    <a href="nike.html">Nike</a> 
+	    <a href="hm.html">H&M</a> 
+	    <a href="levis.html">Levi's</a> 
+	</div>
+
+</li>
+</ul>
+</div>
+
+</div>
+
+
+<div class="logo">
+<h2>We Deals With</h2>
+<div class="logo-img">
+<img src="logo/reebok.png" alt="logo">
+<img src="logo/nike.png" alt="logo">
+<img src="logo/hm.png" alt="logo">
+<img src="logo/levis.png" alt="logo">
+</div>
+</div>
+
+
+<div class="new">
+<h2>New Arrivals</h2>
+<div class="new-ar">
+<div class="new-left">
+<a href="nike.html"><img src="new1.jpg" alt="new"></a>
+<a href="nike.html"><h3>Nike Shoes</h3></a>
+</div>
+
+<div class="new-right">
+<a href="hm.html"><img src="new2.jpg" alt="new"></a>
+<a href="hm.html"><h3>H&M Cloths</h3></a>
+</div>
+
+</div>
+</div>
+
+
+<div class="shopping">
+<h3>Shopping for?</h3>
+<div class="shop">
+<div class="men">
+<h1>SHOP FOR MEN</h1>
+<a href="men.html" class="btn-shop">EXPLORE</a>
+</div>
+
+<div class="women">
+<h1>SHOP FOR WOMEN</h1>
+<a href="women.html" class="btn-shop">EXPLORE</a>
+</div>
+</div>
+</div>
+
+
+<div class="brand">
+<img class="brand-logo" src="logo/reebok.png" alt="logo">
+<div class="brand-p">
+<div class="p1">
+<a href="reebok/1.jpg"><img src="reebok/1.jpg" alt="shoes" style="width:100%;"></a>
+<h3>Mens Reebok Stride</h3>
+<h2><s>&#8377;4550</s>&nbsp;&nbsp; &#8377;3185 &nbsp;&nbsp;<font color="red">30% OFF</font></h2>
+<button class="btn">Add to Cart</button>
+</div>
+
+<div class="p1">
+<a href="reebok/2.jpg"><img src="reebok/2.jpg" alt="shoes" style="width:100%;"></a>
+<h3>Reebok Stride Walker</h3>
+<h2><s>&#8377;6500</s>&nbsp;&nbsp; &#8377;4550 &nbsp;&nbsp;<font color="red">30% OFF</font></h2>
+<button class="btn">Add to Cart</button>
+</div>
+
+<div class="p1">
+<a href="reebok/3.jpg"><img src="reebok/3.jpg" alt="shoes" style="width:100%;"></a>
+<h3>Reebok Drift Runner</h3>
+<h2><s>&#8377;3600</s>&nbsp;&nbsp; &#8377;2340 &nbsp;&nbsp;<font color="red">35% OFF</font></h2>
+<button class="btn">Add to Cart</button>
+</div>
+
+<div class="p1">
+<a href="reebok/4.jpg"><img src="reebok/4.jpg" alt="shoes" style="width:100%;"></a>
+<h3>Women Floatride Enegy</h3>
+<h2><s>&#8377;3950</s>&nbsp;&nbsp; &#8377;2690 &nbsp;&nbsp;<font color="red">32% OFF</font></h2>
+<button class="btn">Add to Cart</button>
+</div>
+
+<div class="p1 p1-last">
+<a href="reebok/5.jpg"><img src="reebok/5.jpg" alt="shoes" style="width:100%;"></a>
+<h3>Reebok Ree Fusion Running</h3>
+<h2><s>&#8377;4760</s>&nbsp;&nbsp; &#8377;3094 &nbsp;&nbsp;<font color="red">35% OFF</font></h2>
+<button class="btn">Add to Cart</button>
+</div>
+
+</div>
+
+</div>
+
+
+<div class="brand">
+<img class="brand-logo" src="logo/nike.png" alt="logo">
+<div class="brand-p">
+<div class="p1">
+<a href="nike/1.jpg"><img src="nike/1.jpg" alt="shoes" style="width:100%;"></a>
+<h3>Nike Air Force 11'07</h3>
+<h2><s>&#8377;4550</s>&nbsp;&nbsp; &#8377;3185 &nbsp;&nbsp;<font color="red">30% OFF</font></h2>
+<button class="btn">Add to Cart</button>
+</div>
+
+<div class="p1">
+<a href="nike/2.jpg"><img src="nike/2.jpg" alt="shoes" style="width:100%;"></a>
+<h3>Nike Jumpman MVP</h3>
+<h2><s>&#8377;6500</s>&nbsp;&nbsp; &#8377;4550 &nbsp;&nbsp;<font color="red">30% OFF</font></h2>
+<button class="btn">Add to Cart</button>
+</div>
+
+<div class="p1">
+<a href="nike/3.jpg"><img src="nike/3.jpg" alt="shoes" style="width:100%;"></a>
+<h3>Nike Air Max 90 Futura</h3>
+<h2><s>&#8377;3600</s>&nbsp;&nbsp; &#8377;2340 &nbsp;&nbsp;<font color="red">35% OFF</font></h2>
+<button class="btn">Add to Cart</button>
+</div>
+
+<div class="p1">
+<a href="nike/4.jpg"><img src="nike/4.jpg" alt="shoes" style="width:100%;"></a>
+<h3>Air Jordan Next Chapter</h3>
+<h2><s>&#8377;3950</s>&nbsp;&nbsp; &#8377;2690 &nbsp;&nbsp;<font color="red">32% OFF</font></h2>
+<button class="btn">Add to Cart</button>
+</div>
+
+<div class="p1 p1-last">
+<a href="nike/5.jpg"><img src="nike/5.jpg" alt="shoes" style="width:100%;"></a>
+<h3>Nike Air Max Men 12</h3>
+<h2><s>&#8377;4760</s>&nbsp;&nbsp; &#8377;3094 &nbsp;&nbsp;<font color="red">35% OFF</font></h2>
+<button class="btn">Add to Cart</button>
+</div>
+
+</div>
+
+</div>
+
+
+
+<div class="brand">
+<img class="brand-logo" src="logo/hm.png" alt="logo">
+<div class="brand-p">
+<div class="p1">
+<a href="hm/1.jpg"><img src="hm/1.jpg" alt="shoes" style="width:100%;"></a>
+<h3>H&M Man Long Coat</h3>
+<h2><s>&#8377;4550</s>&nbsp;&nbsp; &#8377;3185 &nbsp;&nbsp;<font color="red">30% OFF</font></h2>
+<button class="btn">Add to Cart</button>
+</div>
+
+<div class="p1">
+<a href="hm/2.jpg"><img src="hm/2.jpg" alt="shoes" style="width:100%;"></a>
+<h3>H&M Women Jacket</h3>
+<h2><s>&#8377;6500</s>&nbsp;&nbsp; &#8377;4550 &nbsp;&nbsp;<font color="red">30% OFF</font></h2>
+<button class="btn">Add to Cart</button>
+</div>
+
+<div class="p1">
+<a href="hm/3.jpg"><img src="hm/3.jpg" alt="shoes" style="width:100%;"></a>
+<h3>H&M Montif-Front Hoodie</h3>
+<h2><s>&#8377;3600</s>&nbsp;&nbsp; &#8377;2340 &nbsp;&nbsp;<font color="red">35% OFF</font></h2>
+<button class="btn">Add to Cart</button>
+</div>
+
+<div class="p1">
+<a href="hm/4.jpg"><img src="hm/4.jpg" alt="shoes" style="width:100%;"></a>
+<h3>H&M Relaxed Fit Hoodie</h3>
+<h2><s>&#8377;3950</s>&nbsp;&nbsp; &#8377;2690 &nbsp;&nbsp;<font color="red">32% OFF</font></h2>
+<button class="btn">Add to Cart</button>
+</div>
+
+<div class="p1 p1-last">
+<a href="hm/5.jpg"><img src="hm/5.jpg" alt="shoes" style="width:100%;"></a>
+<h3>H&M Man Denim Jacket</h3>
+<h2><s>&#8377;4760</s>&nbsp;&nbsp; &#8377;3094 &nbsp;&nbsp;<font color="red">35% OFF</font></h2>
+<button class="btn">Add to Cart</button>
+</div>
+
+</div>
+
+</div>
+
+
+<div class="brand">
+<img class="brand-logo" src="logo/levis.png" alt="logo">
+<div class="brand-p">
+<div class="p1">
+<a href="levis/1.jpg"><img src="levis/1.jpg" alt="shoes" style="width:100%;"></a>
+<h3>Levi's T-shirt Half-sleeve</h3>
+<h2><s>&#8377;4550</s>&nbsp;&nbsp; &#8377;3185 &nbsp;&nbsp;<font color="red">30% OFF</font></h2>
+<button class="btn">Add to Cart</button>
+</div>
+
+<div class="p1">
+<a href="levis/2.jpg"><img src="levis/2.jpg" alt="shoes" style="width:100%;"></a>
+<h3>Levi's Man Shirt White</h3>
+<h2><s>&#8377;6500</s>&nbsp;&nbsp; &#8377;4550 &nbsp;&nbsp;<font color="red">30% OFF</font></h2>
+<button class="btn">Add to Cart</button>
+</div>
+
+<div class="p1">
+<a href="levis/3.jpg"><img src="levis/3.jpg" alt="shoes" style="width:100%;"></a>
+<h3>Levi's Woman Hoodie White</h3>
+<h2><s>&#8377;3600</s>&nbsp;&nbsp; &#8377;2340 &nbsp;&nbsp;<font color="red">35% OFF</font></h2>
+<button class="btn">Add to Cart</button>
+</div>
+
+<div class="p1">
+<a href="levis/4.jpg"><img src="levis/4.jpg" alt="shoes" style="width:100%;"></a>
+<h3>Levi's T-shirt Full-sleeve</h3>
+<h2><s>&#8377;3950</s>&nbsp;&nbsp; &#8377;2690 &nbsp;&nbsp;<font color="red">32% OFF</font></h2>
+<button class="btn">Add to Cart</button>
+</div>
+
+<div class="p1 p1-last">
+<a href="levis/5.jpg"><img src="levis/5.jpg" alt="shoes" style="width:100%;"></a>
+<h3>Levi's Man Jacket Black</h3>
+<h2><s>&#8377;4760</s>&nbsp;&nbsp; &#8377;3094 &nbsp;&nbsp;<font color="red">35% OFF</font></h2>
+<button class="btn">Add to Cart</button>
+</div>
+
+</div>
+
+</div>
+
+
+<div class="cs">
+<div class="cs-img">
+<img src="cs1.jpg" alt="new">
+</div>
+<div class="cs-text">
+<h1>COMING SOON</h1>
+<h2>Accessories</h2>
+<p>We are introducing soon our new section of accessories.</p>
+</div>
+
+</div>
+
+
+<div class="about">
+<div class="ab-img">
+<img src="logo.jpg" alt="logo">
+</div>
+<div class="ab-text">
+<p>A brand store refers to a retail establishment or an online platform that exclusively sells products associated with a specific brand. These stores are owned or authorized by the brand itself and are dedicated to showcasing and selling items that carry the brand's logo, name, or distinctive features.</p>
+</div>
+
+</div>
+
+
+<div class="reg">
+<h1>Registration</h1>
+<div class="reg-cont" style="margin:auto;">
+<div class="left-reg">
+<input type="text" name="name" placeholder="First Name">
+<input type="email" name="email" placeholder="Your Email">
+
+</div>
+
+<div class="right-reg">
+<input type="text" name="name" placeholder="Last Name">
+<input type="tel" name="pnumber" placeholder="Phone Number">
+</div>
+</div>
+<input type="submit" class="order-btn" value="Submit">
+</div>
+
+
+<div class="footer-top">
+<div class="footer-img">
+<img src="logo.jpg" alt="logo">
+</div>
+<p>These stores are owned or authorized by the brand itself and are dedicated to showcasing and selling items that carry the brand's logo, name, or distinctive features.</p>
+<div class="footer-social">
+<a href="insta.html"><img class="social" src="insta.png" alt="logo"></a>
+<a href="fb.html"><img class="social" src="fb.png" alt="logo"></a>
+<a href="twtr.html"><img class="social" src="twtr.png" alt="logo"></a>
+<a href="wapp.html"><img class="social" src="wapp.png" alt="logo"></a>
+</div>
+
+</div>
+
+
+<div class="footer-bottom">
+<p>Copyright @2023 BRAND STORE. Created by <font color="#9d9d9d">Narendar Karwasra</font></p>
+</div>
