@@ -1,237 +1,333 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-<title>Abc...</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>news</title>
+
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+			font-family: 'Gilroy';
+		}
+
+		html,
+		body {
+			height: 100%;
+			width: 100%;
+			background-color: #96a98b;
+		}
+
+
+		.navbar {
+			display: flex;
+			width: 100%;
+			justify-content: center;
+			list-style-type: none;
+			padding: 0;
+		}
+
+		.navbar a {
+			text-decoration: none;
+			text-align: center;
+			font-size: 4vh;
+			color: black;
+			display: block;
+			text-align: center;
+			padding: 0.5vw 2vw;
+		}
+
+		.dropdown {
+			display: inline-block;
+		}
+
+		.dropdown-content {
+			display: none;
+			position: absolute;
+			z-index: 1;
+		}
+
+		.dropdown-content a {
+			text-align: center;
+			display: block;
+		}
+
+		.dropdown:hover .dropdown-content {
+			display: block;
+		}
+
+		.navbar a:hover {
+			background: #bd8839;
+			transition: ease .2s;
+			border-radius: 35px;
+			color: white;
+		}
+
+
+		.news {
+			width: 90%;
+			margin: auto;
+			column-count: 3;
+			column-gap: 4%;
+			column-rule: 1px solid black;
+			font-size: 1.8vw;
+			margin-top: 10%;
+			margin-bottom: 5%;
+			text-align: justify;
+		}
+
+		.news h1 {
+			column-span: all;
+			text-align: center;
+			margin-bottom: 5%;
+		}
+
+		.news .logo {
+			width: 50%;
+		}
+
+
+
+		.footer-top {
+			width: 100%;
+			text-align: center;
+			padding: 0% 10%;
+			margin: 3% auto;
+		}
+
+		.footer-img {
+			width: 25%;
+			margin: auto;
+		}
+
+		.footer-img img {
+			width: 100%;
+		}
+
+		.footer-top p {
+			margin-top: 3%;
+			font-size: 3.6vh;
+		}
+
+		.footer-social {
+			margin: 3% 0 0 0;
+		}
+
+		.footer-social .social {
+			width: 5%;
+			cursor: pointer;
+		}
+
+		.footer-bottom {
+			width: 100%;
+			text-align: center;
+			background-color: #525e4c;
+			font-size: 3.3vh;
+			padding: 1%;
+		}
+
+
+
+
+
+
+		@media screen and (max-width:1000px) {
+			.navbar {
+				display: block;
+			}
+
+			.navbar a {
+				font-size: 4.3vh;
+				padding: 0.5vh 0vw;
+			}
+
+			.dropdown {
+				display: block;
+			}
+
+			.dropdown-content {
+				position: static;
+				width: 100%;
+			}
+
+
+			.news {
+				column-count: 2;
+				column-gap: 6%;
+				font-size: 3vw;
+			}
+
+			.news h1 {
+				font-size: 5vw;
+			}
+
+
+			.footer-top {
+				padding: 0 10%;
+				margin: 3% auto;
+			}
+
+			.footer-img {
+				width: 30%;
+			}
+
+			.footer-top p {
+				font-size: 3.5vh;
+			}
+
+			.footer-social .social {
+				width: 6.5%;
+			}
+
+			.footer-bottom {
+				font-size: 2.8vh;
+			}
+		}
+
+
+
+
+
+		@media screen and (max-width:600px) {
+			.navbar a {
+				font-size: 5vw;
+				padding: 0.3vw 2vw;
+			}
+
+
+			.news {
+				column-count: 1;
+				font-size: 4vw;
+			}
+
+			.news h1 {
+				font-size: 7vw;
+			}
+
+			.news .logo {
+				width: 40%;
+				display: block;
+				margin: auto;
+				padding-bottom: 5%;
+			}
+
+
+			.footer-img {
+				width: 40%;
+			}
+
+			.footer-top p {
+				font-size: 4.5vw;
+			}
+
+			.footer-social .social {
+				width: 10%;
+			}
+
+			.footer-bottom {
+				font-size: 3.5vw;
+			}
+		}
+
+
+
+
+
+		@media screen and (max-width:400px) {
+			.navbar a {
+				font-size: 6vw;
+				padding: 0.5vw 2vw;
+			}
+
+			.footer-img {
+				width: 45%;
+			}
+
+			.footer-top p {
+				font-size: 6vw;
+			}
+
+			.footer-social .social {
+				width: 15%;
+			}
+
+			.footer-bottom {
+				font-size: 4.5vw;
+			}
+		}
+	</style>
 </head>
-<style>
 
-*{
-box-sizing:border-box;
+<body>
 
-}
-body{
-background-color:#96a98b;
-}
-
-.navbar{
-	display:flex;
-	width:100%;
-	justify-content:center;
-	list-style-type:none;
-	padding:0;
-	
-}
-.navbar a{
-	text-decoration:none;
-	text-align:center;
-	font-size:4vh;
-	color:black;
-	display:block;
-	text-align:center;
-	padding:0.5vw 2vw;
-}
-.dropdown{
-display:inline-block;
-}
-.dropdown-content{
-	display:none;
-	position:absolute;
-	z-index:1;
-}
-.dropdown-content a{
-	text-align:center;
-	display:block;
-}
-.dropdown:hover .dropdown-content{
-	display:block;
-}
-
-.navbar a:hover{
-	background:#bd8839;
-	transition:ease .2s;
-	border-radius:35px;
-	color:white;
-}
+	<ul class="navbar">
+		<li><a href="index.html">Home</a></li>
+		<li><a href="about.html">About</a></li>
+		<li><a href="news.html">News</a></li>
+		<li><a href="contact.html">Contact</a></li>
+		<li class="dropdown"><a href="shop.html">Brands</a>
+			<div class="dropdown-content">
+				<a href="reebok.html">Reebok</a>
+				<a href="nike.html">Nike</a>
+				<a href="hm.html">H&M</a>
+				<a href="levis.html">Levi's</a>
+			</div>
+		</li>
+	</ul>
 
 
-.news{
-column-count:3;
-column-gap:4%;
-column-rule:1px solid black;
-font-size:2.5vw;
-margin-top:5%;
-text-align:justify;
-}
-.news h1{
-column-span:all;
-text-align:center;
-}
-.news .logo{
-width:100%;
-}
+	<div class="news">
+		<h1>"Brand Store" on Tranding</h1>
+		<img class="logo" src="logo.jpg" alt="logo">
+		A brand store typically refers to a physical retail location or an online platform dedicated to selling products
+		exclusively from a particular brand. These stores are focused on showcasing and selling items made or endorsed
+		by a specific company or label. They often provide a comprehensive experience centered around the brand's
+		identity, allowing customers to engage more deeply with the brand's products, services, and overall ethos.
 
+		Brand stores can range from flagship stores, which are large, high-profile locations in major cities, to smaller
+		boutique stores, and even online storefronts. They aim to create an environment that reflects the brand's values
+		and aesthetics while offering consumers a direct and immersive shopping experience.
 
-.footer-top{
-	width:100%;	
-	text-align:center;
-	padding:3% 10%;
-	margin-top:0;
-}
-.footer-img{
-	width:30%;
-	margin:auto;
-}
-.footer-img img{
-	width:100%;
-}
-.footer-top p{
-	font-size:3.5vh;
-}
-.footer-social{
-	margin:2% 0 0 0;
-}
-.footer-social .social{
-	width:7%;
-	margin-right:1%;
-	cursor:pointer;
-}
+		These stores are instrumental in brand building, allowing companies to directly communicate their brand story,
+		vision, and unique selling propositions to customers. This direct interaction can help strengthen customer
+		loyalty, enhance brand recognition, and provide a more personalized shopping experience.
 
-.footer-social .social:hover{
-	border-radius:50%;
-	box-shadow:5px 5px 10px gray;
-}
+		Clothing is a diverse and vast category that encompasses a wide range of garments and accessories designed for
+		various purposes, styles, and occasions. From everyday wear to formal attire, sportswear, and specialized
+		clothing for different activities or climates, the world of clothing is expansive.
 
-.footer-bottom{
-	text-align:center;
-	background-color:#525e4c;
-	font-size:3vh;
-	padding:.1%;
-}
+		Fashion trends often dictate the popularity of certain styles, fabrics, colors, and cuts. The clothing industry
+		is continuously evolving, influenced by cultural shifts, technology advancements, sustainability movements, and
+		consumer preferences. Fashion brands, both big and small, cater to diverse demographics and tastes, offering a
+		wide array of choices in terms of design, price range, and functionality.
 
-
-
-
-@media screen and (max-width:900px){
-.navbar{
-    display:block;
-}
-.navbar a{
-	font-size:4.3vh;
-	padding:0.5vh 0vw;
-}
-.dropdown{
-    display:block;
-}
-.dropdown-content{
-position:static;
-width:100%;
-}
-
-
-.news{
-column-count:2;
-font-size:3.5vw;
-}
-
-
-
-.footer-img{
-	width:40%;
-}
-.footer-top p{
-	font-size:3vh;
-}
-.footer-social .social{
-	width:8%;
-}
-.footer-bottom{
-	font-size:2.5vh;
-}	
-}
-
-
-
-@media screen and (max-width:500px){
-.navbar a{
-	font-size:6vw;
-	padding:0.5vw 2vw;
-}
-
-.news{
-column-count:1;
-font-size:5.5vw;
-}
-
-
-.footer-img{
-	width:50%;
-}
-.footer-top p{
-	font-size:4vw;
-}
-.footer-social .social{
-	width:12%;
-}
-.footer-bottom{
-	font-size:3.2vw;
-}	
-}
-
-
-
-
-</style>
-</head>
-
-
-<ul class="navbar">
-<li><a href="index.html">Home</a></li>
-<li><a href="about.html">About</a></li>
-<li><a href="news.html">News</a></li>
-<li><a href="contact.html">Contact</a></li>
-<li class="dropdown"><a href="shop.html">Brands</a>
-    <div class="dropdown-content">
-	    <a href="reebok.html">Reebok</a> 
-	    <a href="nike.html">Nike</a> 
-	    <a href="hm.html">H&M</a> 
-	    <a href="levis.html">Levi's</a> 
 	</div>
-</li>
-</ul>
 
+	<hr>
 
-<div class="news">
-<h1>"Brand Store" on Tranding</h1>
-<img class="logo" src="logo.jpg" alt="logo">
-A brand store typically refers to a physical retail location or an online platform dedicated to selling products exclusively from a particular brand. These stores are focused on showcasing and selling items made or endorsed by a specific company or label. They often provide a comprehensive experience centered around the brand's identity, allowing customers to engage more deeply with the brand's products, services, and overall ethos.
+	<div class="footer-top">
+		<div class="footer-img">
+			<img src="logo.jpg" alt="logo">
+		</div>
+		<p>These stores are owned or authorized by the brand itself and are dedicated to showcasing and selling items
+			that carry the brand's logo, name, or distinctive features.</p>
+		<div class="footer-social">
+			<a href="#"><img class="social" src="insta.png" alt="logo"></a>
+			<a href="#"><img class="social" src="fb.png" alt="logo"></a>
+			<a href="#"><img class="social" src="twtr.png" alt="logo"></a>
+			<a href="#"><img class="social" src="wapp.png" alt="logo"></a>
+		</div>
 
-Brand stores can range from flagship stores, which are large, high-profile locations in major cities, to smaller boutique stores, and even online storefronts. They aim to create an environment that reflects the brand's values and aesthetics while offering consumers a direct and immersive shopping experience.
+	</div>
 
-These stores are instrumental in brand building, allowing companies to directly communicate their brand story, vision, and unique selling propositions to customers. This direct interaction can help strengthen customer loyalty, enhance brand recognition, and provide a more personalized shopping experience.
+	<div class="footer-bottom">
+		<p>Copyright @2023 BRAND STORE. Created by <font color="#9d9d9d">Narendar Karwasra</font>
+		</p>
+	</div>
 
-Clothing is a diverse and vast category that encompasses a wide range of garments and accessories designed for various purposes, styles, and occasions. From everyday wear to formal attire, sportswear, and specialized clothing for different activities or climates, the world of clothing is expansive.
+</body>
 
-Fashion trends often dictate the popularity of certain styles, fabrics, colors, and cuts. The clothing industry is continuously evolving, influenced by cultural shifts, technology advancements, sustainability movements, and consumer preferences. Fashion brands, both big and small, cater to diverse demographics and tastes, offering a wide array of choices in terms of design, price range, and functionality.
-
-</div>
-
-<hr>
-
-<div class="footer-top">
-<div class="footer-img">
-<img src="logo.jpg" alt="logo">
-</div>
-<p>These stores are owned or authorized by the brand itself and are dedicated to showcasing and selling items that carry the brand's logo, name, or distinctive features.</p>
-<div class="footer-social">
-<a href="insta.html"><img class="social" src="insta.png" alt="logo"></a>
-<a href="fb.html"><img class="social" src="fb.png" alt="logo"></a>
-<a href="twtr.html"><img class="social" src="twtr.png" alt="logo"></a>
-<a href="wapp.html"><img class="social" src="wapp.png" alt="logo"></a>
-</div>
-
-</div>
-
-<div class="footer-bottom">
-<p>Copyright @2023 BRAND STORE. Created by <font color="#9d9d9d">Narendar Karwasra</font></p>
-</div>
-
+</html>
